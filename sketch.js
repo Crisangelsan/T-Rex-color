@@ -2,11 +2,13 @@ var backgroundImg;
 var trex;
 var trexr;
 var ground;
+var imagenrandom;
 
 function preload() {
   trexr = loadAnimation("trex1.png", "trex2.png", "trex3.png");
   backgroundImg = loadImage("backgroundImg.png");
   suelo = loadImage("ground.png")
+  imagenrandom = loadImage("jake1.png")
 }
 
 
@@ -20,6 +22,11 @@ function setup() {
   ground.scale = 0.5;
   ground.addImage(suelo)
   sueloinvisible = createSprite(210, 400, 400, 10)
+
+jack = createSprite(200, 200, 10, 10)
+jack.addImage(imagenrandom)
+
+
 }
 
 
